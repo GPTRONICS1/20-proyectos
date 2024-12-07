@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título principal -->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:text="Área de la Circunferencia"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Imagen de referencia de la circunferencia -->
+    <ImageView
+        android:id="@+id/imgCircunferencia"
+        android:layout_width="wrap_content"
+        android:layout_height="368dp"
+        android:src="@drawable/img0" />
+
+    <!-- Entrada de texto para el radio -->
+    <EditText
+        android:id="@+id/etRadio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el radio"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:paddingBottom="20dp"
+        android:textSize="20sp" />
+
+    <!-- Botón para calcular el área -->
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="calcularArea"
+        android:text="Calcular Área" />
+
+    <!-- TextView para mostrar el resultado del área -->
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:textSize="20sp" />
+
+</LinearLayout>

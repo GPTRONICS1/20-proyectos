@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título principal -->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:text="Área del Rectángulo"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Imagen de referencia del rectángulo -->
+    <ImageView
+        android:id="@+id/imgRectangulo"
+        android:layout_width="wrap_content"
+        android:layout_height="368dp"
+        android:src="@drawable/secuencial01" />
+
+    <!-- Entrada de texto para la base -->
+    <EditText
+        android:id="@+id/etBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese la base"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:paddingBottom="10dp"
+        android:textSize="20sp" />
+
+    <!-- Entrada de texto para la altura -->
+    <EditText
+        android:id="@+id/etAltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese la altura"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:paddingBottom="20dp"
+        android:textSize="20sp" />
+
+    <!-- Botón para calcular el área -->
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="calcularArea"
+        android:text="Calcular Área" />
+
+</LinearLayout>

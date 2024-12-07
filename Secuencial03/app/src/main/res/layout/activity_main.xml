@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título principal -->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:text="Área de la Figura Compuesta"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- ImageView para mostrar la imagen de la figura compuesta -->
+    <ImageView
+        android:id="@+id/ivFigura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Figura compuesta de un triángulo y un rectángulo"
+        android:paddingBottom="20dp"
+        android:src="@drawable/img" />
+
+    <!-- Entrada de texto para el valor de A -->
+    <EditText
+        android:id="@+id/etA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el valor de A"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:paddingBottom="10dp"
+        android:textSize="20sp" />
+
+    <!-- Entrada de texto para el valor de B -->
+    <EditText
+        android:id="@+id/etB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el valor de B"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:paddingBottom="10dp"
+        android:textSize="20sp" />
+
+    <!-- Entrada de texto para el valor de C -->
+    <EditText
+        android:id="@+id/etC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el valor de C"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:paddingBottom="20dp"
+        android:textSize="20sp" />
+
+    <!-- Botón para calcular el área -->
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="calcularArea"
+        android:text="Calcular Área" />
+
+</LinearLayout>
